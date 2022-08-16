@@ -30,7 +30,6 @@ body{
     width: 200px;
     height: 200px;
     position: relative;
-    transform-style: preserve-3d;
 }
 .front,
 .back{
@@ -54,7 +53,6 @@ body{
     visibility: hidden;
 }
 .card:hover .back{
-    transform: rotateY(180deg);
     visibility: visible;
 }
 .card:hover .front{
