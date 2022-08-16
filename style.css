@@ -46,14 +46,17 @@ body{
     background-color: bisque;
     color: coral;
     z-index: 2;
-    backface-visibility: hidden;
 }
 .back{
     background-color: coral;
     color: bisque;
     z-index: 1;
-    transform: rotateY(180deg);
+    visibility: hidden;
 }
-.card:hover{
+.card:hover .back{
     transform: rotateY(180deg);
+    visibility: visible;
+}
+.card:hover .front{
+    visibility: hidden;
 }
